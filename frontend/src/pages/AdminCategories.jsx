@@ -284,7 +284,6 @@ function AdminCategories() {
             <main className="admin-content">
                 <div className="admin-categories-layout">
 
-                    {/* CREATE CATEGORY */}
                     <section className="admin-category-create-card">
                         <div className="admin-section-heading">
                             <div className="admin-section-number">
@@ -473,7 +472,6 @@ function AdminCategories() {
                         </form>
                     </section>
 
-                    {/* CATEGORY LIST */}
                     <section className="admin-category-list-card">
                         <div className="admin-category-list-heading">
                             <div>

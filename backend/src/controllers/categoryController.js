@@ -7,7 +7,6 @@ const createCategorySlug = (name) =>
     .replace(/[^\p{L}\p{N}]+/gu, "-")
     .replace(/^-+|-+$/g, "");
 
-// GET all active categories
 const getCategories = async (req, res) => {
   try {
     const result = await pool.query(`
@@ -32,7 +31,6 @@ const getCategories = async (req, res) => {
   }
 };
 
-// GET all categories, including inactive categories, for admin
 const getAdminCategories = async (req, res) => {
   try {
     const result = await pool.query(`
@@ -62,7 +60,6 @@ const getAdminCategories = async (req, res) => {
   }
 };
 
-// GET one category by slug
 const getCategoryBySlug = async (req, res) => {
   try {
     const { slug } = req.params;
@@ -99,7 +96,6 @@ const getCategoryBySlug = async (req, res) => {
   }
 };
 
-// UPDATE category details
 const updateCategory = async (req, res) => {
   try {
     const { id } = req.params;
@@ -172,7 +168,6 @@ const updateCategory = async (req, res) => {
   }
 };
 
-// DELETE category permanently when no news references it
 const deleteCategory = async (req, res) => {
   try {
     const result = await pool.query(
@@ -215,7 +210,6 @@ const deleteCategory = async (req, res) => {
   }
 };
 
-// SET category availability
 const setCategoryStatus = async (req, res) => {
   try {
     const { isActive } = req.body;
@@ -254,7 +248,6 @@ const setCategoryStatus = async (req, res) => {
   }
 };
 
-// CREATE category
 const createCategory = async (req, res) => {
   try {
     const { name, description, displayOrder } = req.body;

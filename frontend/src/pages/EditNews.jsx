@@ -35,10 +35,6 @@ function EditNews() {
 
     const token = localStorage.getItem("adminToken");
 
-    // ============================================================
-    // LOAD ARTICLE + CATEGORIES + MEDIA
-    // ============================================================
-
     useEffect(() => {
         const loadData = async () => {
             setLoading(true);
@@ -161,10 +157,6 @@ function EditNews() {
         loadData();
     }, [id, t, token]);
 
-    // ============================================================
-    // MEDIA SELECT
-    // ============================================================
-
     const handleMediaSelect = (event) => {
         const selectedMediaId =
             event.target.value;
@@ -194,10 +186,6 @@ function EditNews() {
             }
         }
     };
-
-    // ============================================================
-    // SAVE CHANGES
-    // ============================================================
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -278,10 +266,6 @@ function EditNews() {
         }
     };
 
-    // ============================================================
-    // LOADING
-    // ============================================================
-
     if (loading) {
         return (
             <AdminLayout>
@@ -303,10 +287,6 @@ function EditNews() {
     return (
         <AdminLayout>
             <div className="edit-news-page">
-
-                {/* ==================================================
-                    HEADER
-                ================================================== */}
 
                 <div className="edit-news-header">
 
@@ -339,10 +319,6 @@ function EditNews() {
                     </Link>
 
                 </div>
-
-                {/* ==================================================
-                    ALERTS
-                ================================================== */}
 
                 {error && (
                     <div className="edit-news-alert edit-news-alert-error">
@@ -380,24 +356,12 @@ function EditNews() {
                     </div>
                 )}
 
-                {/* ==================================================
-                    FORM
-                ================================================== */}
-
                 <form
                     onSubmit={handleSubmit}
                     className="edit-news-form"
                 >
 
-                    {/* ==================================================
-                        MAIN CONTENT
-                    ================================================== */}
-
                     <div className="edit-news-main">
-
-                        {/* ==================================================
-                            ARTICLE INFORMATION
-                        ================================================== */}
 
                         <section className="edit-news-section">
 
@@ -418,8 +382,6 @@ function EditNews() {
                                 </div>
 
                             </div>
-
-                            {/* TITLE */}
 
                             <div className="edit-news-field">
 
@@ -452,8 +414,6 @@ function EditNews() {
                                 />
 
                             </div>
-
-                            {/* CATEGORY */}
 
                             <div className="edit-news-field">
 
@@ -497,8 +457,6 @@ function EditNews() {
 
                             </div>
 
-                            {/* SUMMARY */}
-
                             <div className="edit-news-field">
 
                                 <div className="edit-news-label-row">
@@ -529,8 +487,6 @@ function EditNews() {
                                 />
 
                             </div>
-
-                            {/* CONTENT */}
 
                             <div className="edit-news-field">
 
@@ -572,10 +528,6 @@ function EditNews() {
 
                         </section>
 
-                        {/* ==================================================
-                            FEATURED IMAGE
-                        ================================================== */}
-
                         <section className="edit-news-section">
 
                             <div className="edit-news-section-heading">
@@ -595,8 +547,6 @@ function EditNews() {
                                 </div>
 
                             </div>
-
-                            {/* MEDIA LIBRARY */}
 
                             <div className="edit-news-field">
 
@@ -643,8 +593,6 @@ function EditNews() {
                                 </select>
 
                             </div>
-
-                            {/* IMAGE PREVIEW */}
 
                             {featuredImage && (
                                 <div className="edit-news-image-preview">
@@ -693,8 +641,6 @@ function EditNews() {
                                 </div>
                             )}
 
-                            {/* IMAGE URL */}
-
                             <div className="edit-news-field">
 
                                 <label htmlFor="featuredImage">
@@ -714,8 +660,6 @@ function EditNews() {
                                 />
 
                             </div>
-
-                            {/* CAPTION */}
 
                             <div className="edit-news-field">
 
@@ -743,13 +687,7 @@ function EditNews() {
 
                     </div>
 
-                    {/* ==================================================
-                        SIDEBAR
-                    ================================================== */}
-
                     <aside className="edit-news-sidebar">
-
-                        {/* PUBLISHING */}
 
                         <section className="edit-news-side-card">
 
@@ -801,8 +739,6 @@ function EditNews() {
 
                             </div>
 
-                            {/* FEATURED TOGGLE */}
-
                             <label className="edit-news-toggle">
 
                                 <input
@@ -836,8 +772,6 @@ function EditNews() {
                             </label>
 
                         </section>
-
-                        {/* BEFORE SAVING */}
 
                         <section className="edit-news-side-card edit-news-tips">
 
@@ -888,10 +822,6 @@ function EditNews() {
                         </section>
 
                     </aside>
-
-                    {/* ==================================================
-                        ACTIONS
-                    ================================================== */}
 
                     <div className="edit-news-actions">
 

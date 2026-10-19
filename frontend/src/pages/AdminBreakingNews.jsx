@@ -400,7 +400,7 @@ function AdminBreakingNews() {
                 )}
 
                 <div className="admin-breaking-layout">
-                    {/* CREATE */}
+
                     <section className="admin-breaking-create-card">
                         <div className="admin-breaking-section-heading">
                             <div className="admin-section-number">
@@ -708,7 +708,6 @@ function AdminBreakingNews() {
                         </form>
                     </section>
 
-                    {/* INFORMATION PANEL */}
                     <aside className="admin-breaking-info-card">
                         <div className="admin-breaking-info-icon">
                             !
@@ -750,7 +749,6 @@ function AdminBreakingNews() {
                     </aside>
                 </div>
 
-                {/* EXISTING ALERTS */}
                 <section className="admin-breaking-list-card">
                     <div className="admin-breaking-list-header">
                         <div>

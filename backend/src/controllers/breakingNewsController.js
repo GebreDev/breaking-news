@@ -1,7 +1,6 @@
 const pool = require("../config/db");
 const { createAuditLog } = require("../services/auditLogService");
 
-// GET all breaking news for admin
 const getBreakingNews = async (req, res) => {
   try {
     const result = await pool.query(`
@@ -32,7 +31,6 @@ const getBreakingNews = async (req, res) => {
   }
 };
 
-// GET active breaking news for public website
 const getActiveBreakingNews = async (req, res) => {
   try {
     const result = await pool.query(`
@@ -69,7 +67,6 @@ const getActiveBreakingNews = async (req, res) => {
   }
 };
 
-// CREATE breaking news
 const createBreakingNews = async (req, res) => {
   try {
     const { headline, newsId, linkUrl, startsAt, endsAt } = req.body;
@@ -138,7 +135,6 @@ const createBreakingNews = async (req, res) => {
   }
 };
 
-// UPDATE active status
 const updateBreakingNews = async (req, res) => {
   try {
     const { id } = req.params;
@@ -190,7 +186,6 @@ const updateBreakingNews = async (req, res) => {
   }
 };
 
-// UPDATE breaking news details without changing its active status
 const updateBreakingNewsDetails = async (req, res) => {
   try {
     const { id } = req.params;
@@ -272,7 +267,6 @@ const updateBreakingNewsDetails = async (req, res) => {
   }
 };
 
-// DELETE breaking news
 const deleteBreakingNews = async (req, res) => {
   try {
     const { id } = req.params;

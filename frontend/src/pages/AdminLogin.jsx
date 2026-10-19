@@ -69,7 +69,6 @@ function AdminLogin() {
 
             <div className="admin-login-card">
 
-                {/* BRAND */}
                 <div className="admin-login-brand">
                     <div className="admin-login-logo">
                         {t("brand.name")} {" "}
@@ -81,7 +80,6 @@ function AdminLogin() {
                     <p>{t("login.portal")}</p>
                 </div>
 
-                {/* HEADER */}
                 <div className="admin-login-header">
                     <h1>{t("login.title")}</h1>
                     <p>
@@ -89,7 +87,6 @@ function AdminLogin() {
                     </p>
                 </div>
 
-                {/* ERROR */}
                 {error && (
                     <div
                         className="login-error"
@@ -101,7 +98,6 @@ function AdminLogin() {
                     </div>
                 )}
 
-                {/* LOGIN FORM */}
                 <form onSubmit={handleSubmit}>
 
                     <div className="login-field">
@@ -180,7 +176,6 @@ function AdminLogin() {
 
                 </form>
 
-                {/* FOOTER */}
                 <div className="admin-login-footer">
                     <Link to="/">
                         <span>←</span>

@@ -184,7 +184,6 @@ function CategoryNews() {
 
             <BreakingBar items={breakingNews} />
 
-            {/* CATEGORY CONTENT */}
             <main className="main-content category-page">
                 <section className="page-heading category-heading">
                     <p className="section-label">

@@ -99,12 +99,8 @@ function HomePage() {
 
             <BreakingBar items={breakingNews} />
 
-            {/* =========================
-                MAIN CONTENT
-            ========================== */}
             <main className="main-content">
 
-                {/* Page Introduction */}
                 <section className="page-heading">
                     <p className="section-label">
                         {t("home.topStories")}
@@ -119,7 +115,6 @@ function HomePage() {
                     </p>
                 </section>
 
-                {/* Loading */}
                 {loading && (
                     <div className="empty-news">
                         <div className="loading-spinner"></div>
@@ -130,7 +125,6 @@ function HomePage() {
                     </div>
                 )}
 
-                {/* No News */}
                 {!loading && news.length === 0 && (
                     <div className="empty-news">
                         <div className="empty-news-icon">
@@ -147,13 +141,9 @@ function HomePage() {
                     </div>
                 )}
 
-                {/* =========================
-                    FEATURED STORIES
-                ========================== */}
                 {!loading && featuredNews && (
                     <section className="news-grid">
 
-                        {/* Featured Story */}
                         <Link
                             to={`/news/${featuredNews.slug}`}
                             className="main-story"
@@ -210,7 +200,6 @@ function HomePage() {
                             </div>
                         </Link>
 
-                        {/* Side Stories */}
                         {sideNews.length > 0 && (
                             <div className="side-stories">
 
@@ -267,9 +256,6 @@ function HomePage() {
                     </section>
                 )}
 
-                {/* =========================
-                    LATEST STORIES
-                ========================== */}
                 {!loading && latestNews.length > 0 && (
                     <section className="latest-section">
 

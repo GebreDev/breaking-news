@@ -21,7 +21,6 @@ function AdminLayout({ children }) {
     return (
         <div className="admin-layout">
 
-            {/* Sidebar */}
             <aside className="admin-sidebar">
 
                 <div className="admin-sidebar-brand">
@@ -145,7 +144,6 @@ function AdminLayout({ children }) {
 
             </aside>
 
-            {/* Page Content */}
             <div className="admin-main">
                 {children}
             </div>

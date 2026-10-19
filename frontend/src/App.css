@@ -13,10 +13,6 @@ body {
   min-height: 100vh;
 }
 
-/* =========================
-   HEADER
-========================= */
-
 .site-header {
   background: #0b1f33;
   border-bottom: 4px solid #c62828;
@@ -63,10 +59,6 @@ body {
   opacity: 0.7;
 }
 
-/* =========================
-   BREAKING BAR
-========================= */
-
 .breaking-bar {
   background: #ffffff;
   border-bottom: 1px solid #dfe4e8;
@@ -99,10 +91,6 @@ body {
   font-size: 14px;
   font-weight: 600;
 }
-
-/* =========================
-   MAIN
-========================= */
 
 .main-content {
   max-width: 1280px;
@@ -140,17 +128,11 @@ body {
   line-height: 1.6;
 }
 
-/* =========================
-   NEWS GRID
-========================= */
-
 .news-grid {
   display: grid;
   grid-template-columns: 1.6fr 1fr;
   gap: 30px;
 }
-
-/* Main story */
 
 .main-story {
   background: #ffffff;
@@ -208,8 +190,6 @@ body {
   font-size: 12px;
 }
 
-/* Side stories */
-
 .side-stories {
   display: flex;
   flex-direction: column;
@@ -249,10 +229,6 @@ body {
   font-size: 18px;
   line-height: 1.3;
 }
-
-/* =========================
-   RESPONSIVE
-========================= */
 
 @media (max-width: 900px) {
   .header-container {
@@ -324,9 +300,6 @@ body {
   margin: 0;
   color: #68747e;
 }
-/* =========================
-   ADMIN LOGIN
-========================= */
 
 .admin-login-page {
   min-height: 100vh;
@@ -490,17 +463,12 @@ body {
     padding: 32px 25px;
   }
 }
-/* =========================
-   ADMIN DASHBOARD
-========================= */
 
 .admin-layout {
   min-height: 100vh;
   display: flex;
   background: #f4f6f8;
 }
-
-/* Sidebar */
 
 .admin-sidebar {
   width: 250px;
@@ -581,8 +549,6 @@ body {
   background: #123b5d;
 }
 
-/* Main */
-
 .admin-main {
   flex: 1;
   min-width: 0;
@@ -633,8 +599,6 @@ body {
   font-size: 12px;
 }
 
-/* Content */
-
 .admin-content {
   padding: 35px;
 }
@@ -671,8 +635,6 @@ body {
   font-size: 14px;
   line-height: 1.6;
 }
-
-/* Dashboard cards */
 
 .dashboard-grid {
   display: grid;
@@ -722,8 +684,6 @@ body {
 .dashboard-card a:hover {
   text-decoration: underline;
 }
-
-/* Responsive */
 
 @media (max-width: 1100px) {
   .dashboard-grid {
@@ -781,9 +741,6 @@ body {
     grid-template-columns: 1fr;
   }
 }
-/* =========================
-   NEWS FORM
-========================= */
 
 .admin-primary-button,
 .admin-secondary-button {
@@ -954,9 +911,6 @@ body {
     width: 100%;
   }
 }
-/* =========================
-   CATEGORY MANAGEMENT
-========================= */
 
 .category-management {
   display: grid;
@@ -1035,10 +989,6 @@ body {
     grid-template-columns: 1fr;
   }
 }
-
-/* =========================
-   NEWS MANAGEMENT
-========================= */
 
 .admin-page-header {
   margin-bottom: 22px;
@@ -1124,8 +1074,6 @@ body {
   background: #fafbfc;
 }
 
-/* Column widths */
-
 .news-title-column {
   width: 34%;
 }
@@ -1146,8 +1094,6 @@ body {
   width: 18%;
 }
 
-/* Title */
-
 .news-title-cell {
   color: #17212b;
 }
@@ -1165,16 +1111,12 @@ body {
   overflow-wrap: anywhere;
 }
 
-/* Category */
-
 .news-category {
   color: #52616d;
 
   font-size: 13px;
   font-weight: 600;
 }
-
-/* Status */
 
 .status-badge {
   display: inline-flex;
@@ -1200,8 +1142,6 @@ body {
   letter-spacing: 0.4px;
 }
 
-/* Date */
-
 .news-date-cell {
   color: #68747e;
 
@@ -1209,8 +1149,6 @@ body {
 
   white-space: nowrap;
 }
-
-/* Actions */
 
 .news-actions-cell {
   white-space: nowrap;
@@ -1266,8 +1204,6 @@ body {
   border-color: #c62828;
 }
 
-/* Empty / loading state */
-
 .admin-table-message {
   padding: 55px 30px;
 
@@ -1291,8 +1227,6 @@ body {
 
   font-size: 14px;
 }
-
-/* Responsive */
 
 @media (max-width: 900px) {
   .admin-content {
@@ -1327,9 +1261,6 @@ body {
     min-width: 760px;
   }
 }
-/* =========================
-   MEDIA MANAGEMENT
-========================= */
 
 .media-library-header {
   margin-top: 32px;
@@ -1464,13 +1395,6 @@ body {
     grid-template-columns: 1fr;
   }
 }
-/* =========================================================
-   PUBLIC HOMEPAGE 
-========================================================= */
-
-/* =========================
-   SITE HEADER
-========================= */
 
 .site-header {
   position: sticky;
@@ -1513,8 +1437,6 @@ body {
 .logo:hover {
   color: #ffffff;
 }
-
-/* Navigation */
 
 .main-nav {
   flex: 1;
@@ -1583,8 +1505,6 @@ body {
   color: #ffffff;
 }
 
-/* Search */
-
 .header-search {
   flex-shrink: 0;
 
@@ -1645,10 +1565,6 @@ body {
 .header-search button:hover {
   background: #a91f1f;
 }
-
-/* =========================
-   BREAKING NEWS
-========================= */
 
 .breaking-bar {
   width: 100%;
@@ -1787,10 +1703,6 @@ a.breaking-headline:hover {
   color: #c62828;
 }
 
-/* =========================
-   MAIN CONTENT
-========================= */
-
 .main-content {
   max-width: 1380px;
 
@@ -1830,10 +1742,6 @@ a.breaking-headline:hover {
   line-height: 1.65;
 }
 
-/* =========================
-   FEATURED NEWS GRID
-========================= */
-
 .news-grid {
   display: grid;
 
@@ -1843,8 +1751,6 @@ a.breaking-headline:hover {
 
   align-items: start;
 }
-
-/* Featured story */
 
 .main-story {
   display: block;
@@ -1963,10 +1869,6 @@ a.breaking-headline:hover {
   line-height: 1.65;
 }
 
-/* =========================
-   SIDE STORIES
-========================= */
-
 .side-stories {
   display: flex;
   flex-direction: column;
@@ -2060,10 +1962,6 @@ a.breaking-headline:hover {
 
   overflow: hidden;
 }
-
-/* =========================
-   LATEST STORIES
-========================= */
 
 .latest-section {
   margin-top: 65px;
@@ -2210,10 +2108,6 @@ a.breaking-headline:hover {
   overflow: hidden;
 }
 
-/* =========================
-   EMPTY STATE
-========================= */
-
 .empty-news {
   padding: 65px 30px;
 
@@ -2246,8 +2140,6 @@ a.breaking-headline:hover {
   font-size: 14px;
 }
 
-/* Loading */
-
 .loading-spinner {
   width: 30px;
   height: 30px;
@@ -2267,10 +2159,6 @@ a.breaking-headline:hover {
     transform: rotate(360deg);
   }
 }
-
-/* =========================
-   PUBLIC FOOTER
-========================= */
 
 .site-footer {
   background: #0b1f33;
@@ -2356,10 +2244,6 @@ a.breaking-headline:hover {
   font-size: 11px;
 }
 
-/* =========================================================
-   HOMEPAGE RESPONSIVE
-========================================================= */
-
 @media (max-width: 1150px) {
   .header-container {
     gap: 22px;
@@ -2390,8 +2274,6 @@ a.breaking-headline:hover {
     height: 100px;
   }
 }
-
-/* Tablet */
 
 @media (max-width: 950px) {
   .site-header {
@@ -2449,8 +2331,6 @@ a.breaking-headline:hover {
     height: 400px;
   }
 }
-
-/* Mobile */
 
 @media (max-width: 650px) {
   .header-container {
@@ -2584,8 +2464,6 @@ a.breaking-headline:hover {
   }
 }
 
-/* Small phones */
-
 @media (max-width: 400px) {
   .main-content {
     padding-left: 12px;
@@ -2627,9 +2505,6 @@ a.breaking-headline:hover {
     height: 190px;
   }
 }
-/* ============================================================
-   NEWS ARTICLE PAGE
-   ============================================================ */
 
 .article-page {
   min-height: 70vh;
@@ -2829,10 +2704,6 @@ a.breaking-headline:hover {
   background: #f7f9fa;
 }
 
-/* ============================================================
-   ARTICLE RESPONSIVE DESIGN
-   ============================================================ */
-
 @media (max-width: 950px) {
   .article-header {
     padding: 34px 35px 28px;
@@ -2950,9 +2821,6 @@ a.breaking-headline:hover {
     max-height: 320px;
   }
 }
-/* ============================================================
-   CATEGORY NEWS PAGE
-   ============================================================ */
 
 .category-page {
   padding-top: 48px;
@@ -2969,8 +2837,6 @@ a.breaking-headline:hover {
 .category-heading p:not(.section-label) {
   max-width: 760px;
 }
-
-/* CATEGORY GRID */
 
 .category-news-grid {
   display: grid;
@@ -3090,8 +2956,6 @@ a.breaking-headline:hover {
   color: #c62828;
 }
 
-/* CATEGORY EMPTY STATE */
-
 .category-empty {
   min-height: 360px;
   padding: 55px 25px;
@@ -3100,8 +2964,6 @@ a.breaking-headline:hover {
 .category-empty .article-back-button {
   margin-top: 8px;
 }
-
-/* CATEGORY LOADING */
 
 .category-page-loading {
   min-height: 500px;
@@ -3128,8 +2990,6 @@ a.breaking-headline:hover {
   margin: 0;
   color: #69757f;
 }
-
-/* CATEGORY NOT FOUND */
 
 .category-not-found {
   min-height: 500px;
@@ -3171,10 +3031,6 @@ a.breaking-headline:hover {
   color: #69757f;
   line-height: 1.7;
 }
-
-/* ============================================================
-   CATEGORY RESPONSIVE DESIGN
-   ============================================================ */
 
 @media (max-width: 1100px) {
   .category-news-grid {
@@ -3240,9 +3096,6 @@ a.breaking-headline:hover {
     flex-direction: column;
   }
 }
-/* ============================================================
-   SEARCH NEWS PAGE
-   ============================================================ */
 
 .search-page {
   padding-top: 48px;
@@ -3260,8 +3113,6 @@ a.breaking-headline:hover {
 .search-page-heading p:not(.section-label) {
   max-width: 700px;
 }
-
-/* SEARCH FORM */
 
 .search-main-form {
   display: flex;
@@ -3315,8 +3166,6 @@ a.breaking-headline:hover {
   transform: translateY(-1px);
 }
 
-/* SEARCH RESULTS */
-
 .search-results {
   width: 100%;
 }
@@ -3355,8 +3204,6 @@ a.breaking-headline:hover {
   white-space: nowrap;
 }
 
-/* SEARCH STATUS */
-
 .search-status {
   min-height: 360px;
   display: flex;
@@ -3382,8 +3229,6 @@ a.breaking-headline:hover {
   margin: 0;
   color: #69757f;
 }
-
-/* SEARCH EMPTY */
 
 .search-empty {
   min-height: 360px;
@@ -3444,8 +3289,6 @@ a.breaking-headline:hover {
   border-color: #c6d1d8;
 }
 
-/* SEARCH ERROR */
-
 .search-error {
   max-width: 650px;
   margin: 30px auto;
@@ -3477,10 +3320,6 @@ a.breaking-headline:hover {
   font-weight: 700;
   cursor: pointer;
 }
-
-/* ============================================================
-   SEARCH RESPONSIVE DESIGN
-   ============================================================ */
 
 @media (max-width: 700px) {
   .search-page {
@@ -3547,9 +3386,6 @@ a.breaking-headline:hover {
     font-size: 12px;
   }
 }
-/* ============================================================
-   ADMIN LOGIN
-   ============================================================ */
 
 .admin-login-page {
   min-height: 100vh;
@@ -3583,8 +3419,6 @@ a.breaking-headline:hover {
     0 20px 55px rgba(15, 35, 55, 0.1),
     0 3px 12px rgba(15, 35, 55, 0.04);
 }
-
-/* BRAND */
 
 .admin-login-brand {
   text-align: center;
@@ -3620,8 +3454,6 @@ a.breaking-headline:hover {
   letter-spacing: 0.4px;
 }
 
-/* HEADER */
-
 .admin-login-header {
   margin-bottom: 26px;
 }
@@ -3640,8 +3472,6 @@ a.breaking-headline:hover {
   font-size: 14px;
   line-height: 1.6;
 }
-
-/* ERROR */
 
 .login-error {
   display: flex;
@@ -3670,8 +3500,6 @@ a.breaking-headline:hover {
   font-size: 12px;
   font-weight: 700;
 }
-
-/* FORM */
 
 .login-field {
   margin-bottom: 20px;
@@ -3743,8 +3571,6 @@ a.breaking-headline:hover {
   background: #f5f7f9;
 }
 
-/* BUTTON */
-
 .admin-login-button {
   width: 100%;
   height: 49px;
@@ -3794,8 +3620,6 @@ a.breaking-headline:hover {
   transform: translateX(3px);
 }
 
-/* LOADING */
-
 .login-spinner {
   width: 16px;
   height: 16px;
@@ -3810,8 +3634,6 @@ a.breaking-headline:hover {
     transform: rotate(360deg);
   }
 }
-
-/* FOOTER */
 
 .admin-login-footer {
   margin-top: 27px;
@@ -3844,16 +3666,12 @@ a.breaking-headline:hover {
   transform: translateX(-3px);
 }
 
-/* COPYRIGHT */
-
 .admin-login-copyright {
   margin-top: 20px;
   color: #8a97a2;
   font-size: 11px;
   text-align: center;
 }
-
-/* RESPONSIVE */
 
 @media (max-width: 600px) {
   .admin-login-page {
@@ -3904,9 +3722,6 @@ a.breaking-headline:hover {
     height: 47px;
   }
 }
-/* ============================================================
-   ADMIN DASHBOARD
-   ============================================================ */
 
 .admin-page-eyebrow {
   display: block;
@@ -3930,8 +3745,6 @@ a.breaking-headline:hover {
   color: #71808d;
   font-size: 14px;
 }
-
-/* WELCOME */
 
 .admin-dashboard-welcome {
   position: relative;
@@ -4022,8 +3835,6 @@ a.breaking-headline:hover {
   background: #c62828;
 }
 
-/* SECTION HEADER */
-
 .dashboard-management {
   margin-bottom: 30px;
 }
@@ -4047,8 +3858,6 @@ a.breaking-headline:hover {
   color: #7b8995;
   font-size: 13px;
 }
-
-/* CARDS */
 
 .admin-dashboard-grid {
   display: grid;
@@ -4150,8 +3959,6 @@ a.breaking-headline:hover {
   transform: translateX(4px);
 }
 
-/* RESPONSIVE */
-
 @media (max-width: 1100px) {
   .admin-dashboard-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -4217,9 +4024,6 @@ a.breaking-headline:hover {
     padding: 19px;
   }
 }
-/* ============================================================
-   ADMIN NEWS MANAGEMENT
-   ============================================================ */
 
 .admin-news-topbar {
   align-items: center;
@@ -4233,8 +4037,6 @@ a.breaking-headline:hover {
   font-size: 17px;
   line-height: 1;
 }
-
-/* INTRO */
 
 .admin-news-intro {
   display: flex;
@@ -4277,8 +4079,6 @@ a.breaking-headline:hover {
   font-weight: 600;
 }
 
-/* TABLE CONTAINER */
-
 .admin-news-table-container {
   overflow: hidden;
   border: 1px solid #e1e7eb;
@@ -4286,8 +4086,6 @@ a.breaking-headline:hover {
   background: #ffffff;
   box-shadow: 0 3px 12px rgba(23, 33, 43, 0.035);
 }
-
-/* TABLE */
 
 .admin-news-table {
   min-width: 850px;
@@ -4323,8 +4121,6 @@ a.breaking-headline:hover {
 .admin-news-table tbody tr:hover {
   background: #fafcfd;
 }
-
-/* ARTICLE */
 
 .admin-news-article-info {
   display: flex;
@@ -4382,8 +4178,6 @@ a.breaking-headline:hover {
   white-space: nowrap;
 }
 
-/* CATEGORY */
-
 .news-category {
   display: inline-flex;
   align-items: center;
@@ -4396,8 +4190,6 @@ a.breaking-headline:hover {
   font-weight: 700;
   white-space: nowrap;
 }
-
-/* STATUS */
 
 .status-badge {
   display: inline-flex;
@@ -4420,8 +4212,6 @@ a.breaking-headline:hover {
   background: #3b9b5f;
 }
 
-/* DATE */
-
 .news-date-cell {
   white-space: nowrap;
 }
@@ -4439,8 +4229,6 @@ a.breaking-headline:hover {
   color: #9aa5ae;
   font-size: 10px;
 }
-
-/* ACTIONS */
 
 .news-actions-cell {
   white-space: nowrap;
@@ -4487,8 +4275,6 @@ a.breaking-headline:hover {
   color: #a51f1f;
 }
 
-/* LOADING */
-
 .admin-news-loading {
   min-height: 220px;
   display: flex;
@@ -4525,8 +4311,6 @@ a.breaking-headline:hover {
     transform: rotate(360deg);
   }
 }
-
-/* EMPTY */
 
 .admin-news-empty {
   min-height: 310px;
@@ -4565,8 +4349,6 @@ a.breaking-headline:hover {
   font-size: 13px;
   line-height: 1.6;
 }
-
-/* RESPONSIVE */
 
 @media (max-width: 900px) {
   .admin-news-table-container {
@@ -4615,15 +4397,10 @@ a.breaking-headline:hover {
     min-height: 270px;
   }
 }
-/* ============================================================
-   CREATE NEWS
-   ============================================================ */
 
 .create-news-topbar {
   align-items: center;
 }
-
-/* FORM LAYOUT */
 
 .create-news-form {
   width: 100%;
@@ -4658,8 +4435,6 @@ a.breaking-headline:hover {
   flex-direction: column;
   gap: 20px;
 }
-
-/* SECTION HEADINGS */
 
 .create-news-section-heading {
   display: flex;
@@ -4698,8 +4473,6 @@ a.breaking-headline:hover {
   font-size: 12px;
   line-height: 1.5;
 }
-
-/* FORM FIELDS */
 
 .create-news-form-group {
   margin-bottom: 21px;
@@ -4812,8 +4585,6 @@ a.breaking-headline:hover {
   font-size: 10px;
 }
 
-/* IMAGE PREVIEW */
-
 .create-news-image-preview {
   position: relative;
   width: 100%;
@@ -4844,8 +4615,6 @@ a.breaking-headline:hover {
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
-
-/* SIDEBAR */
 
 .create-news-sidebar-card {
   padding: 22px;
@@ -4889,8 +4658,6 @@ a.breaking-headline:hover {
 .create-news-sidebar-card .create-news-form-group {
   margin-bottom: 0;
 }
-
-/* FEATURED TOGGLE */
 
 .create-news-featured-toggle {
   display: flex;
@@ -4950,8 +4717,6 @@ a.breaking-headline:hover {
   line-height: 1.45;
 }
 
-/* TIPS */
-
 .create-news-tips ul {
   margin: 0;
   padding: 0 0 0 17px;
@@ -4967,8 +4732,6 @@ a.breaking-headline:hover {
 .create-news-tips li:last-child {
   margin-bottom: 0;
 }
-
-/* ALERTS */
 
 .create-news-alert {
   display: flex;
@@ -5025,8 +4788,6 @@ a.breaking-headline:hover {
   color: #ffffff;
 }
 
-/* ACTIONS */
-
 .create-news-actions {
   display: flex;
   align-items: center;
@@ -5065,8 +4826,6 @@ a.breaking-headline:hover {
     transform: rotate(360deg);
   }
 }
-
-/* RESPONSIVE */
 
 @media (max-width: 1000px) {
   .create-news-layout {
@@ -5135,9 +4894,6 @@ a.breaking-headline:hover {
     text-align: center;
   }
 }
-/* =========================================================
-   ADMIN CATEGORIES
-   ========================================================= */
 
 .admin-categories-topbar {
   align-items: center;
@@ -5187,16 +4943,12 @@ a.breaking-headline:hover {
   font-weight: 700;
 }
 
-/* Layout */
-
 .admin-categories-layout {
   display: grid;
   grid-template-columns: minmax(320px, 370px) minmax(0, 1fr);
   gap: 24px;
   align-items: start;
 }
-
-/* Create Card */
 
 .admin-category-create-card,
 .admin-category-list-card {
@@ -5245,8 +4997,6 @@ a.breaking-headline:hover {
   font-size: 0.84rem;
   line-height: 1.55;
 }
-
-/* Alerts */
 
 .admin-category-alert {
   display: flex;
@@ -5300,8 +5050,6 @@ a.breaking-headline:hover {
 .admin-category-alert-success .admin-category-alert-icon {
   background: #d9f1e2;
 }
-
-/* Form */
 
 .admin-category-form {
   display: flex;
@@ -5412,8 +5160,6 @@ a.breaking-headline:hover {
   line-height: 1;
 }
 
-/* Spinner */
-
 .admin-category-spinner {
   width: 15px;
   height: 15px;
@@ -5437,8 +5183,6 @@ a.breaking-headline:hover {
     transform: rotate(360deg);
   }
 }
-
-/* Category List */
 
 .admin-category-list-card {
   min-width: 0;
@@ -5498,8 +5242,6 @@ a.breaking-headline:hover {
   font-size: 0.7rem;
   font-weight: 700;
 }
-
-/* Table */
 
 .admin-category-table-wrapper {
   width: 100%;
@@ -5690,8 +5432,6 @@ a.breaking-headline:hover {
   color: #263542;
 }
 
-/* Loading / Empty */
-
 .admin-category-state {
   display: flex;
   min-height: 300px;
@@ -5728,8 +5468,6 @@ a.breaking-headline:hover {
   font-size: 1.7rem;
   font-weight: 300;
 }
-
-/* Responsive */
 
 @media (max-width: 1100px) {
   .admin-categories-layout {
@@ -5812,9 +5550,6 @@ a.breaking-headline:hover {
     min-height: 250px;
   }
 }
-/* =========================================================
-   ADMIN BREAKING NEWS
-   ========================================================= */
 
 .admin-breaking-topbar {
   align-items: center;
@@ -5905,8 +5640,6 @@ a.breaking-headline:hover {
   background: #f7dede;
 }
 
-/* Main layout */
-
 .admin-breaking-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 290px;
@@ -5948,8 +5681,6 @@ a.breaking-headline:hover {
   font-size: 0.83rem;
   line-height: 1.5;
 }
-
-/* Form */
 
 .admin-breaking-form {
   display: flex;
@@ -6033,8 +5764,6 @@ a.breaking-headline:hover {
   font-weight: 700;
 }
 
-/* Date / time */
-
 .admin-breaking-datetime-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -6050,8 +5779,6 @@ a.breaking-headline:hover {
 .admin-breaking-datetime input {
   min-width: 0;
 }
-
-/* Button */
 
 .admin-breaking-form-actions {
   display: flex;
@@ -6125,8 +5852,6 @@ a.breaking-headline:hover {
   }
 }
 
-/* Information card */
-
 .admin-breaking-info-card {
   position: sticky;
   top: 20px;
@@ -6188,8 +5913,6 @@ a.breaking-headline:hover {
   line-height: 1.5;
 }
 
-/* Existing list */
-
 .admin-breaking-list-card {
   min-width: 0;
   overflow: hidden;
@@ -6242,8 +5965,6 @@ a.breaking-headline:hover {
   font-weight: 700;
 }
 
-/* Table */
-
 .admin-breaking-table-wrapper {
   width: 100%;
   overflow-x: auto;
@@ -6288,8 +6009,6 @@ a.breaking-headline:hover {
   background: #fbfcfd;
 }
 
-/* Headline */
-
 .admin-breaking-headline-cell {
   display: flex;
   gap: 11px;
@@ -6330,16 +6049,12 @@ a.breaking-headline:hover {
   font-size: 0.67rem;
 }
 
-/* Related */
-
 .admin-breaking-related {
   display: block;
   max-width: 220px;
   color: #667580;
   line-height: 1.45;
 }
-
-/* Status */
 
 .admin-breaking-status {
   display: inline-flex;
@@ -6376,8 +6091,6 @@ a.breaking-headline:hover {
   background: #9ba5ad;
 }
 
-/* Schedule */
-
 .admin-breaking-schedule {
   display: flex;
   flex-direction: column;
@@ -6403,8 +6116,6 @@ a.breaking-headline:hover {
   font-size: 0.71rem;
   font-weight: 650;
 }
-
-/* Actions */
 
 .admin-breaking-actions {
   display: flex;
@@ -6443,8 +6154,6 @@ a.breaking-headline:hover {
   color: #b52b2b;
 }
 
-/* Empty / Loading */
-
 .admin-breaking-state {
   display: flex;
   min-height: 300px;
@@ -6481,8 +6190,6 @@ a.breaking-headline:hover {
   font-size: 1.25rem;
   font-weight: 800;
 }
-
-/* Responsive */
 
 @media (max-width: 1050px) {
   .admin-breaking-layout {
@@ -6567,9 +6274,6 @@ a.breaking-headline:hover {
     min-width: 1120px;
   }
 }
-/* ============================================================
-   ADMIN NEWS MANAGEMENT
-   ============================================================ */
 
 .admin-news-page {
   padding: 10px 0 50px;
@@ -6635,10 +6339,6 @@ a.breaking-headline:hover {
   line-height: 1;
 }
 
-/* ============================================================
-   ALERTS
-   ============================================================ */
-
 .admin-news-alert {
   display: flex;
   align-items: center;
@@ -6698,10 +6398,6 @@ a.breaking-headline:hover {
   background: #f9dddd;
 }
 
-/* ============================================================
-   SUMMARY CARDS
-   ============================================================ */
-
 .admin-news-summary {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -6757,10 +6453,6 @@ a.breaking-headline:hover {
   font-size: 1.45rem;
   font-weight: 800;
 }
-
-/* ============================================================
-   MAIN CARD
-   ============================================================ */
 
 .admin-news-card {
   overflow: hidden;
@@ -6827,10 +6519,6 @@ a.breaking-headline:hover {
   display: inline-block;
   animation: adminNewsSpin 0.8s linear infinite;
 }
-
-/* ============================================================
-   TABLE
-   ============================================================ */
 
 .admin-news-table-wrapper {
   width: 100%;
@@ -6900,10 +6588,6 @@ a.breaking-headline:hover {
 .admin-news-actions-heading {
   text-align: right !important;
 }
-
-/* ============================================================
-   ARTICLE CELL
-   ============================================================ */
 
 .admin-news-article-cell {
   display: flex;
@@ -7117,10 +6801,6 @@ a.breaking-headline:hover {
   }
 }
 
-/* ============================================================
-   CATEGORY
-   ============================================================ */
-
 .admin-news-category {
   display: inline-flex;
   padding: 5px 9px;
@@ -7131,10 +6811,6 @@ a.breaking-headline:hover {
   font-weight: 750;
   white-space: nowrap;
 }
-
-/* ============================================================
-   STATUS
-   ============================================================ */
 
 .admin-news-status {
   display: inline-flex;
@@ -7172,10 +6848,6 @@ a.breaking-headline:hover {
   background: #9aa3aa;
 }
 
-/* ============================================================
-   DATE
-   ============================================================ */
-
 .admin-news-date strong {
   display: block;
   color: #46515b;
@@ -7190,10 +6862,6 @@ a.breaking-headline:hover {
   color: #9aa3aa;
   font-size: 0.68rem;
 }
-
-/* ============================================================
-   ACTION BUTTONS
-   ============================================================ */
 
 .admin-news-actions {
   display: flex;
@@ -7264,10 +6932,6 @@ a.breaking-headline:hover {
   animation: adminNewsSpin 0.7s linear infinite;
 }
 
-/* ============================================================
-   LOADING
-   ============================================================ */
-
 .admin-news-loading {
   display: flex;
   flex-direction: column;
@@ -7292,10 +6956,6 @@ a.breaking-headline:hover {
   color: #7a858f;
   font-size: 0.85rem;
 }
-
-/* ============================================================
-   EMPTY STATE
-   ============================================================ */
 
 .admin-news-empty {
   display: flex;
@@ -7349,19 +7009,11 @@ a.breaking-headline:hover {
   color: #fff;
 }
 
-/* ============================================================
-   ANIMATIONS
-   ============================================================ */
-
 @keyframes adminNewsSpin {
   to {
     transform: rotate(360deg);
   }
 }
-
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
 
 @media (max-width: 900px) {
   .admin-news-header {
@@ -7405,20 +7057,12 @@ a.breaking-headline:hover {
   }
 }
 
-/* ============================================================
-   EDIT NEWS PAGE
-   ============================================================ */
-
 .edit-news-page {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   padding: 10px 0 50px;
 }
-
-/* ============================================================
-   HEADER
-   ============================================================ */
 
 .edit-news-header {
   display: flex;
@@ -7484,10 +7128,6 @@ a.breaking-headline:hover {
   color: #35749e;
   transform: translateX(-1px);
 }
-
-/* ============================================================
-   ALERTS
-   ============================================================ */
 
 .edit-news-alert {
   display: flex;
@@ -7556,10 +7196,6 @@ a.breaking-headline:hover {
   background: #d7f2df;
 }
 
-/* ============================================================
-   FORM LAYOUT
-   ============================================================ */
-
 .edit-news-form {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 330px;
@@ -7574,10 +7210,6 @@ a.breaking-headline:hover {
   flex-direction: column;
   gap: 22px;
 }
-
-/* ============================================================
-   MAIN SECTIONS
-   ============================================================ */
 
 .edit-news-section {
   padding: 26px;
@@ -7623,10 +7255,6 @@ a.breaking-headline:hover {
   font-size: 0.78rem;
   line-height: 1.5;
 }
-
-/* ============================================================
-   FORM FIELDS
-   ============================================================ */
 
 .edit-news-field {
   margin-bottom: 20px;
@@ -7715,10 +7343,6 @@ a.breaking-headline:hover {
   box-shadow: 0 0 0 3px rgba(67, 139, 186, 0.11);
 }
 
-/* ============================================================
-   IMAGE PREVIEW
-   ============================================================ */
-
 .edit-news-image-preview {
   display: flex;
   align-items: center;
@@ -7764,10 +7388,6 @@ a.breaking-headline:hover {
   font-size: 0.72rem;
   line-height: 1.5;
 }
-
-/* ============================================================
-   SIDEBAR
-   ============================================================ */
 
 .edit-news-sidebar {
   position: sticky;
@@ -7821,10 +7441,6 @@ a.breaking-headline:hover {
   color: #8a949d;
   font-size: 0.68rem;
 }
-
-/* ============================================================
-   FEATURED TOGGLE
-   ============================================================ */
 
 .edit-news-toggle {
   position: relative;
@@ -7900,10 +7516,6 @@ a.breaking-headline:hover {
   line-height: 1.45;
 }
 
-/* ============================================================
-   CHECKLIST
-   ============================================================ */
-
 .edit-news-tips ul {
   margin: 0;
   padding: 0;
@@ -7935,10 +7547,6 @@ a.breaking-headline:hover {
   font-size: 0.7rem;
   font-weight: 800;
 }
-
-/* ============================================================
-   EDIT NEWS LOADING
-   ============================================================ */
 
 .edit-news-loading-page {
   display: flex;
@@ -7978,10 +7586,6 @@ a.breaking-headline:hover {
     transform: rotate(360deg);
   }
 }
-
-/* ============================================================
-   EDIT NEWS RESPONSIVE
-   ============================================================ */
 
 @media (max-width: 1050px) {
   .edit-news-form {
@@ -8104,9 +7708,6 @@ a.breaking-headline:hover {
     gap: 4px;
   }
 }
-/* ============================================================
-   EDIT NEWS ACTIONS 
-   ============================================================ */
 
 .edit-news-actions {
   grid-column: 1 / -1;
@@ -8199,10 +7800,6 @@ a.breaking-headline:hover {
   color: inherit;
 }
 
-/* ============================================================
-   MOBILE ACTIONS
-   ============================================================ */
-
 @media (max-width: 600px) {
   .edit-news-actions {
     display: flex !important;
@@ -8221,9 +7818,6 @@ a.breaking-headline:hover {
     min-width: 0 !important;
   }
 }
-/* ============================================================
-   ADMIN USER MANAGEMENT
-   ============================================================ */
 
 .admin-page {
   width: 100%;
@@ -8250,10 +7844,6 @@ a.breaking-headline:hover {
   color: #6b7280;
   font-size: 14px;
 }
-
-/* ------------------------------------------------------------
-   BUTTONS
-   ------------------------------------------------------------ */
 
 .admin-primary-button,
 .admin-secondary-button,
@@ -8301,10 +7891,6 @@ a.breaking-headline:hover {
   color: white;
 }
 
-/* ------------------------------------------------------------
-   MESSAGES
-   ------------------------------------------------------------ */
-
 .admin-success-message,
 .admin-error-message {
   padding: 13px 16px;
@@ -8325,10 +7911,6 @@ a.breaking-headline:hover {
   border: 1px solid #f0caca;
   color: #b32626;
 }
-
-/* ------------------------------------------------------------
-   CARDS
-   ------------------------------------------------------------ */
 
 .admin-card {
   background: #ffffff;
@@ -8358,10 +7940,6 @@ a.breaking-headline:hover {
   color: #7a858f;
   font-size: 13px;
 }
-
-/* ------------------------------------------------------------
-   CREATE ADMIN FORM
-   ------------------------------------------------------------ */
 
 .admin-user-form-card {
   padding: 24px;
@@ -8416,10 +7994,6 @@ a.breaking-headline:hover {
   color: #a1a9b1;
 }
 
-/* ------------------------------------------------------------
-   ADMIN TABLE
-   ------------------------------------------------------------ */
-
 .admin-table-wrapper {
   width: 100%;
   overflow-x: auto;
@@ -8468,10 +8042,6 @@ a.breaking-headline:hover {
   font-weight: 600;
 }
 
-/* ------------------------------------------------------------
-   STATUS
-   ------------------------------------------------------------ */
-
 .admin-status {
   display: inline-flex;
   align-items: center;
@@ -8507,10 +8077,6 @@ a.breaking-headline:hover {
   background: #c62828;
 }
 
-/* ------------------------------------------------------------
-   LOADING / EMPTY
-   ------------------------------------------------------------ */
-
 .admin-loading,
 .admin-empty {
   padding: 50px 25px;
@@ -8518,10 +8084,6 @@ a.breaking-headline:hover {
   color: #7a858f;
   font-size: 14px;
 }
-
-/* ------------------------------------------------------------
-   RESPONSIVE
-   ------------------------------------------------------------ */
 
 @media (max-width: 1000px) {
   .admin-form-grid {
@@ -8548,9 +8110,6 @@ a.breaking-headline:hover {
     padding: 13px 14px;
   }
 }
-/* ============================================================
-   AUDIT LOG
-   ============================================================ */
 
 .audit-admin-email {
   margin-top: 4px;

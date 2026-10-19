@@ -193,7 +193,6 @@ function AdminSiteSettings() {
                             </div>
                         )}
 
-                        {/* General Settings */}
                         <div className="form-section">
 
                             <h2>
@@ -259,7 +258,6 @@ function AdminSiteSettings() {
 
                         </div>
 
-                        {/* Social Media */}
                         <div className="form-section">
 
                             <h2>

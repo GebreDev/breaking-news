@@ -37,7 +37,6 @@ function AdminDashboard() {
 
             <main className="admin-content">
 
-                {/* WELCOME SECTION */}
                 <section className="admin-dashboard-welcome">
 
                     <div className="dashboard-welcome-content">
@@ -61,7 +60,6 @@ function AdminDashboard() {
 
                 </section>
 
-                {/* MANAGEMENT SECTION */}
                 <section className="dashboard-management">
 
                     <div className="dashboard-section-header">

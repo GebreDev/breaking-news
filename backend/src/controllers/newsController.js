@@ -1,8 +1,5 @@
 const pool = require("../config/db");
 const { createAuditLog } = require("../services/auditLogService");
-// ============================================================
-// GET PUBLISHED NEWS - PUBLIC
-// ============================================================
 
 const getNews = async (req, res) => {
     try {
@@ -36,11 +33,6 @@ const getNews = async (req, res) => {
         });
     }
 };
-
-
-// ============================================================
-// GET ONE PUBLISHED ARTICLE BY SLUG - PUBLIC
-// ============================================================
 
 const getNewsBySlug = async (req, res) => {
     try {
@@ -84,11 +76,6 @@ const getNewsBySlug = async (req, res) => {
     }
 };
 
-
-// ============================================================
-// GET ALL NEWS FOR ADMIN
-// ============================================================
-
 const getAdminNews = async (req, res) => {
     try {
         const result = await pool.query(`
@@ -122,11 +109,6 @@ const getAdminNews = async (req, res) => {
         });
     }
 };
-
-
-// ============================================================
-// GET ONE NEWS ARTICLE FOR ADMIN EDITING
-// ============================================================
 
 const getNewsById = async (req, res) => {
     try {
@@ -170,11 +152,6 @@ const getNewsById = async (req, res) => {
         });
     }
 };
-
-
-// ============================================================
-// CREATE NEWS ARTICLE
-// ============================================================
 
 const createNews = async (req, res) => {
     try {
@@ -267,11 +244,6 @@ res.status(201).json({
         });
     }
 };
-
-
-// ============================================================
-// UPDATE NEWS ARTICLE
-// ============================================================
 
 const updateNews = async (req, res) => {
     try {
@@ -393,11 +365,6 @@ res.json({
     }
 };
 
-
-// ============================================================
-// DELETE NEWS ARTICLE
-// ============================================================
-
 const deleteNews = async (req, res) => {
     try {
         const { id } = req.params;
@@ -439,7 +406,6 @@ res.json({
         });
     }
 };
-
 
 module.exports = {
     getNews,

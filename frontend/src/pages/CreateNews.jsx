@@ -167,7 +167,6 @@ function CreateNews() {
     return (
         <AdminLayout>
 
-            {/* PAGE HEADER */}
             <header className="admin-topbar create-news-topbar">
 
                 <div>
@@ -203,8 +202,6 @@ function CreateNews() {
                     className="create-news-form"
                     onSubmit={handleSubmit}
                 >
-
-                    {/* ALERTS */}
 
                     {error && (
                         <div
@@ -247,8 +244,6 @@ function CreateNews() {
                     )}
 
                     <div className="create-news-layout">
-
-                        {/* MAIN EDITOR */}
 
                         <div className="create-news-main">
 
@@ -432,8 +427,6 @@ function CreateNews() {
 
                             </section>
 
-                            {/* IMAGE SECTION */}
-
                             <section className="create-news-section">
 
                                 <div className="create-news-section-heading">
@@ -570,8 +563,6 @@ function CreateNews() {
 
                         </div>
 
-                        {/* SIDEBAR */}
-
                         <aside className="create-news-sidebar">
 
                             <section className="create-news-sidebar-card">
@@ -658,8 +649,6 @@ function CreateNews() {
 
                             </section>
 
-                            {/* ARTICLE TIPS */}
-
                             <section className="create-news-sidebar-card create-news-tips">
 
                                 <div className="create-news-sidebar-heading">
@@ -715,8 +704,6 @@ function CreateNews() {
                         </aside>
 
                     </div>
-
-                    {/* ACTIONS */}
 
                     <div className="create-news-actions">
 

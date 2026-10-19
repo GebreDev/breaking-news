@@ -3,10 +3,6 @@ const jwt = require("jsonwebtoken");
 const pool = require("../config/db");
 const { createAuditLog } = require("../services/auditLogService");
 
-// ============================================================
-// ADMIN LOGIN
-// ============================================================
-
 const login = async (req, res) => {
     try {
         const { email, password } = req.body;
@@ -103,11 +99,6 @@ const login = async (req, res) => {
     }
 };
 
-
-// ============================================================
-// GET ALL ADMIN USERS
-// ============================================================
-
 const getAdmins = async (req, res) => {
     try {
         const result = await pool.query(
@@ -132,11 +123,6 @@ const getAdmins = async (req, res) => {
         });
     }
 };
-
-
-// ============================================================
-// CREATE ADMIN USER
-// ============================================================
 
 const createAdmin = async (req, res) => {
     try {
@@ -212,11 +198,6 @@ const createAdmin = async (req, res) => {
     }
 };
 
-
-// ============================================================
-// ACTIVATE / DEACTIVATE ADMIN
-// ============================================================
-
 const updateAdminStatus = async (req, res) => {
     try {
         const adminId = Number(req.params.id);
@@ -234,7 +215,6 @@ const updateAdminStatus = async (req, res) => {
             });
         }
 
-        // Prevent an admin from deactivating their own account.
         if (
             Number(req.admin.adminId) === adminId &&
             isActive === false
@@ -244,7 +224,6 @@ const updateAdminStatus = async (req, res) => {
             });
         }
 
-        // Prevent the last active admin from being deactivated.
         if (isActive === false) {
             const activeAdmins = await pool.query(
                 `SELECT COUNT(*)::int AS count
@@ -310,11 +289,6 @@ const updateAdminStatus = async (req, res) => {
     }
 };
 
-
-// ============================================================
-// GET AUDIT LOGS
-// ============================================================
-
 const getAuditLogs = async (req, res) => {
     try {
         const result = await pool.query(`
@@ -345,7 +319,6 @@ const getAuditLogs = async (req, res) => {
         });
     }
 };
-
 
 module.exports = {
     login,

@@ -61,7 +61,6 @@ function AdminAuditLog() {
         <AdminLayout>
         <div className="admin-page">
 
-            {/* Page Header */}
             <div className="admin-page-header">
                 <div>
                     <h1>Audit Log</h1>
@@ -73,14 +72,12 @@ function AdminAuditLog() {
                 </div>
             </div>
 
-            {/* Error */}
             {error && (
                 <div className="admin-error-message">
                     {error}
                 </div>
             )}
 
-            {/* Audit Log Card */}
             <div className="admin-card">
 
                 <div className="admin-card-header">

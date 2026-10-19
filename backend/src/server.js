@@ -17,20 +17,18 @@ app.use("/uploads", express.static(uploadsDirectory));
 
 app.use("/api/media", mediaRoutes);
 
-// Routes
 app.use("/api/categories", categoryRoutes);
 app.use("/api/news", newsRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api/breaking-news", breakingNewsRoutes);
 app.use("/api/site-settings", siteSettingsRoutes);
-// API status
+
 app.get("/", (req, res) => {
   res.json({
     message: "Breaking News API is running",
   });
 });
 
-// Database health check
 app.get("/api/health/db", async (req, res) => {
   try {
     const result = await pool.query("SELECT NOW()");

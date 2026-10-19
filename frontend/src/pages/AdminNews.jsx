@@ -169,7 +169,6 @@ function AdminNews() {
         <AdminLayout>
             <div className="admin-news-page">
 
-                {/* PAGE HEADER */}
                 <div className="admin-news-header">
                     <div>
                         <span className="admin-news-eyebrow">
@@ -198,7 +197,6 @@ function AdminNews() {
                     </Link>
                 </div>
 
-                {/* ALERTS */}
                 {message && (
                     <div className="admin-news-alert admin-news-alert-success">
                         <span className="admin-news-alert-icon">
@@ -235,7 +233,6 @@ function AdminNews() {
                     </div>
                 )}
 
-                {/* SUMMARY */}
                 <div className="admin-news-summary">
                     <div className="admin-news-summary-card">
                         <div className="admin-news-summary-icon">
@@ -296,7 +293,6 @@ function AdminNews() {
                     </div>
                 </div>
 
-                {/* CONTENT CARD */}
                 <div className="admin-news-card">
 
                     <div className="admin-news-card-header">

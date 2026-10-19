@@ -18,7 +18,7 @@ function readStoredLanguage() {
             return stored;
         }
     } catch {
-        // localStorage unavailable (private mode, blocked storage)
+        return DEFAULT_LANGUAGE;
     }
 
     return DEFAULT_LANGUAGE;
@@ -33,7 +33,7 @@ export function LanguageProvider({ children }) {
         try {
             localStorage.setItem(STORAGE_KEY, language);
         } catch {
-            // Ignore write failures, language still applies for this session
+            return;
         }
     }, [language]);
 

@@ -213,7 +213,6 @@ function AdminMedia() {
 
             <main className="admin-content">
 
-                {/* Upload Section */}
                 <div className="form-section">
 
                     <div className="admin-page-header">
@@ -305,7 +304,6 @@ function AdminMedia() {
 
                 </div>
 
-                {/* Media Library */}
                 <div className="admin-page-header media-library-header">
 
                     <div>

@@ -184,7 +184,6 @@ function SearchNews() {
 
             <BreakingBar items={breakingNews} />
 
-            {/* SEARCH CONTENT */}
             <main className="main-content search-page">
                 <section className="page-heading search-page-heading">
                     <p className="section-label">
@@ -200,7 +199,6 @@ function SearchNews() {
                     </p>
                 </section>
 
-                {/* SEARCH FORM */}
                 <form
                     className="news-search-form search-main-form"
                     onSubmit={handleSubmit}
@@ -227,7 +225,6 @@ function SearchNews() {
                     </button>
                 </form>
 
-                {/* SEARCHING */}
                 {visibleLoading && (
                     <div className="search-status">
                         <div className="loading-spinner"></div>
@@ -242,7 +239,6 @@ function SearchNews() {
                     </div>
                 )}
 
-                {/* ERROR */}
                 {!visibleLoading && visibleError && (
                     <div className="search-error">
                         <h2>
@@ -266,7 +262,6 @@ function SearchNews() {
                     </div>
                 )}
 
-                {/* INITIAL STATE */}
                 {!visibleLoading &&
                     !visibleError &&
                     !visibleSearched && (
@@ -285,7 +280,6 @@ function SearchNews() {
                         </div>
                     )}
 
-                {/* NO RESULTS */}
                 {!visibleLoading &&
                     !visibleError &&
                     visibleSearched &&
@@ -324,7 +318,6 @@ function SearchNews() {
                         </div>
                     )}
 
-                {/* RESULTS */}
                 {!visibleLoading &&
                     !visibleError &&
                     visibleArticles.length > 0 && (

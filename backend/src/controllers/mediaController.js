@@ -1,7 +1,6 @@
 const pool = require("../config/db");
 const { createAuditLog } = require("../services/auditLogService");
 
-// GET all media
 const getMedia = async (req, res) => {
     try {
         const result = await pool.query(`
@@ -31,8 +30,6 @@ const getMedia = async (req, res) => {
     }
 };
 
-
-// UPLOAD media
 const uploadMedia = async (req, res) => {
     try {
         if (!req.file) {
@@ -88,8 +85,6 @@ const uploadMedia = async (req, res) => {
     }
 };
 
-
-// DELETE media
 const deleteMedia = async (req, res) => {
     try {
         const { id } = req.params;
@@ -128,7 +123,6 @@ const deleteMedia = async (req, res) => {
         });
     }
 };
-
 
 module.exports = {
     getMedia,

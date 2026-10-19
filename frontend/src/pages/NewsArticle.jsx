@@ -162,7 +162,6 @@ function NewsArticle() {
 
             <BreakingBar items={breakingNews} />
 
-            {/* ARTICLE */}
             <main className="article-page">
                 <div className="article-container">
                     <Link

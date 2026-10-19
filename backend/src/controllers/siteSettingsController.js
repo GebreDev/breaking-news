@@ -1,7 +1,6 @@
 const pool = require("../config/db");
 const { createAuditLog } = require("../services/auditLogService");
 
-// GET all site settings
 const getSiteSettings = async (req, res) => {
     try {
         const result = await pool.query(`
@@ -28,8 +27,6 @@ const getSiteSettings = async (req, res) => {
     }
 };
 
-
-// UPDATE a site setting
 const updateSiteSetting = async (req, res) => {
     try {
         const { key } = req.params;
@@ -85,7 +82,6 @@ const updateSiteSetting = async (req, res) => {
         });
     }
 };
-
 
 module.exports = {
     getSiteSettings,

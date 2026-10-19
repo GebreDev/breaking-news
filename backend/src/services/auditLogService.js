@@ -1,9 +1,5 @@
 const pool = require("../config/db");
 
-// ============================================================
-// CREATE AUDIT LOG
-// ============================================================
-
 const createAuditLog = async ({
     adminId,
     action,
@@ -33,7 +29,7 @@ const createAuditLog = async ({
             ]
         );
     } catch (error) {
-        // Audit logging should never break the main action.
+
         console.error("Audit log error:", error);
     }
 };

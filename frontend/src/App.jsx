@@ -23,9 +23,6 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* =========================
-                    PUBLIC WEBSITE
-                ========================== */}
 
         <Route path="/" element={<HomePage />} />
 
@@ -34,10 +31,6 @@ function App() {
         <Route path="/category/:slug" element={<CategoryNews />} />
 
         <Route path="/search" element={<SearchNews />} />
-
-        {/* =========================
-                    ADMIN AUTHENTICATION
-                ========================== */}
 
         <Route path="/admin/login" element={<AdminLogin />} />
         <Route
@@ -57,10 +50,6 @@ function App() {
           }
         />
 
-        {/* =========================
-                    ADMIN DASHBOARD
-                ========================== */}
-
         <Route
           path="/admin"
           element={
@@ -69,10 +58,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-
-        {/* =========================
-                    NEWS MANAGEMENT
-                ========================== */}
 
         <Route
           path="/admin/news"
@@ -100,10 +85,6 @@ function App() {
           }
         />
 
-        {/* =========================
-                    CATEGORY MANAGEMENT
-                ========================== */}
-
         <Route
           path="/admin/categories"
           element={
@@ -112,10 +93,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-
-        {/* =========================
-                    BREAKING NEWS
-                ========================== */}
 
         <Route
           path="/admin/breaking-news"
@@ -126,10 +103,6 @@ function App() {
           }
         />
 
-        {/* =========================
-                    MEDIA
-                ========================== */}
-
         <Route
           path="/admin/media"
           element={
@@ -138,10 +111,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-
-        {/* =========================
-                    SITE SETTINGS
-                ========================== */}
 
         <Route
           path="/admin/settings"
